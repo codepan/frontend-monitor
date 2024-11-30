@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./bundle.js"></script>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./hahah.css">
+</head>
+<body>
+  <div class="text-center text-danger h2">你好啊</div>
+  <script src="/jquery/dist/jquery.js"></script>
+  <script src="./main.js"></script>
+
+  <script>
+    function handleclick() {
+      console.log(fdfsdfdsfsf)
+    }
+    function handlePromiseClick() {
+      new Promise((resolve, reject) => {
+        window.a.b();
+      });
+    }
+    function handleSuccess() {
+      $.ajax({
+        method: 'get',
+        url: '/api/list'
+      });
+    }
+    function handleError() {
+      $.ajax({
+        method: 'post',
+        url: '/api/delete'
+      });
+    }
+  </script>
+  <div id="app">
+    <span class="span">
+      <button onclick="handleclick()">点击报错</button>
+      <button onclick="handlePromiseClick()">点击抛出Promise错误</button>
+      <button onclick="handleSuccess()">ajax成功请求</button>
+      <button onclick="handleError()">ajax失败请求</button>
+    </span>
+  </div>
+  <script src="./dsfsdfs.js"></script>
+</body>
+</html>
